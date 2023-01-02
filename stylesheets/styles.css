@@ -50,6 +50,7 @@ header p {
 main {
     display: flex;
     flex-direction: column;
+    
 }
 
 .column {
@@ -59,21 +60,30 @@ main {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     width: calc(310rem / 16);
+    margin-bottom: calc(24rem / 16);
     padding: calc(32rem /16) calc(28rem / 16); 
     background: white;
     border-radius: calc(4rem / 16);
+    box-shadow: 0 calc(8rem / 16) calc(12rem / 16) calc(-6rem / 16) var(--grayish-blue);
 }
 
-.card h3 {
+.card > h3 {
     color: var(--very-dark-blue);
     font-size: calc(16rem / 16);
 }
 
 .card > p {
     color: var(--grayish-blue);
-    font-size: calc(12rem / 16);
+    font-size: calc(13rem / 16);
     line-height: 1.7;
+}
+
+.card > img {
+    margin-top: calc(34rem / 16);
+    align-self: flex-end;
 }
 
 .cyan {
@@ -90,4 +100,14 @@ main {
 
 .blue {
     border-top: 3px solid var(--blue);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding: 0 0 2rem 0 ;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
